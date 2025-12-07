@@ -242,7 +242,7 @@ ${msg}
 
 Mohon informasi lebih lanjut mengenai paket hosting yang tersedia beserta harganya. Terima kasih.`;
 
-    const phone = "6281234567890"; // ganti nomor WA kamu
+    const phone = "6281298129545"; // ganti nomor WA kamu
 
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, "_blank");
 }
