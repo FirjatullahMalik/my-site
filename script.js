@@ -229,13 +229,17 @@ function sendWA() {
     const company = document.querySelector('input[placeholder="Company Name"]').value;
     const msg = document.querySelector('textarea').value;
 
-    const text = `Halo, saya ingin menghubungi Anda.%0A
-Nama: ${name}%0A
-Email: ${email}%0A
-Perusahaan: ${company}%0A
-Pesan: ${msg}`;
+    const text = 
+        `Halo, saya ingin membeli tempat hosting.%0A` +
+        `Nama: ${name}%0A` +
+        `Email: ${email}%0A` +
+        `Perusahaan: ${company}%0A` +
+        `Pesan: ${msg}`;
 
-    window.open(`https://wa.me/qr/MQIJ6CCUXUS2J1?text=${text}`, "_blank");
+    // Ganti 628xxxx dengan nomor WhatsApp kamu
+    const phone = "6281298129545";
+
+    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, "_blank");
 }
 
 // Add CSS classes for animations
