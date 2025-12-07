@@ -229,15 +229,20 @@ function sendWA() {
     const company = document.querySelector('input[placeholder="Company Name"]').value;
     const msg = document.querySelector('textarea').value;
 
-    const text = 
-        `Halo, saya ingin membeli tempat hosting.%0A` +
-        `Nama: ${name}%0A` +
-        `Email: ${email}%0A` +
-        `Perusahaan: ${company}%0A` +
-        `Pesan: ${msg}`;
+    const text =
+`Halo, saya tertarik untuk membeli layanan hosting.
 
-    // Ganti 628xxxx dengan nomor WhatsApp kamu
-    const phone = "6281298129545";
+Berikut data saya:
+Nama: ${name}
+Email: ${email}
+Perusahaan: ${company}
+
+Pesan:
+${msg}
+
+Mohon informasi lebih lanjut mengenai paket hosting yang tersedia beserta harganya. Terima kasih.`;
+
+    const phone = "6281234567890"; // ganti nomor WA kamu
 
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, "_blank");
 }
