@@ -111,37 +111,68 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Layanan Kami</h2>
-                <p>Solusi hosting lengkap untuk kebutuhan website modern.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-server"></i>
-                    <h3>Shared Hosting</h3>
-                    <p>Paket hemat untuk blog dan website bisnis kecil — mudah digunakan dan termasuk SSL gratis.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-cloud"></i>
-                    <h3>Cloud VPS</h3>
-                    <p>Performa terisolasi, skalabilitas fleksibel, cocok untuk aplikasi dan toko online.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Managed Hosting</h3>
-                    <p>Kelola seluruh infrastruktur oleh tim kami—update, backup, dan optimasi ditangani penuh.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Dedicated Server</h3>
-                    <p>Resource penuh untuk beban kerja tinggi dan kebutuhan compliance khusus.</p>
-                </div>
-            </div>
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-header">
+            <h2>Paket Hosting</h2>
+            <p>Pilih paket hosting sesuai kebutuhan website Anda.</p>
         </div>
-    </section>
+
+        <div class="services-grid">
+
+            <!-- Paket 1 Bulan -->
+            <div class="service-card">
+                <i class="fas fa-server"></i>
+                <h3>Hosting 1 Bulan</h3>
+                <p><strong>Harga:</strong> Rp140.000</p>
+
+                <ul style="margin: 10px 0; padding-left: 18px;">
+                    <li>10 GB SSD Storage</li>
+                    <li>1 vCPU + 1 GB RAM</li>
+                    <li>Bandwidth 1 TB</li>
+                    <li>Gratis SSL (Let's Encrypt)</li>
+                    <li>Database MySQL/PostgreSQL</li>
+                    <li>Backup harian (retensi 7 hari)</li>
+                    <li>Support 24/7 via WhatsApp</li>
+                </ul>
+
+                <p>Paket ideal untuk blog, portofolio, dan website bisnis kecil.</p>
+
+                <a href="#contact"><button class="btn primary" onclick="orderWA('Hosting 2 Bulan', 200000)">
+                    Pesan Sekarang
+                </button>
+            </a>
+            </div>
+
+            <!-- Paket 2 Bulan -->
+            <div class="service-card">
+                <i class="fas fa-cloud"></i>
+                <h3>Hosting 2 Bulan</h3>
+                <p><strong>Harga:</strong> Rp200.000</p>
+
+                <ul style="margin: 10px 0; padding-left: 18px;">
+                    <li>20 GB SSD Storage</li>
+                    <li>2 vCPU + 2 GB RAM</li>
+                    <li>Bandwidth 2 TB</li>
+                    <li>Gratis SSL (Let's Encrypt)</li>
+                    <li>Database MySQL/PostgreSQL</li>
+                    <li>Backup harian (retensi 14 hari)</li>
+                    <li>Support 24/7 via WhatsApp</li>
+                </ul>
+
+                <p>Paket hemat & direkomendasikan untuk website bisnis skala menengah.</p>
+                <a href="#contact"><button class="btn primary" onclick="orderWA('Hosting 2 Bulan', 200000)">
+                    Pesan Sekarang
+                </button>
+            </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
 
     <!-- Solutions Section -->
     <section id="solutions" class="solutions">
@@ -252,16 +283,16 @@
                 </div>
                 <form class="contact-form">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" placeholder="Nama" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Company Name">
+                        <input type="text" placeholder="Pilih paket 1 atau 2" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
+                        <textarea placeholder="Pesan" required></textarea>
                     </div>
                     <button type="button" class="btn primary" onclick="sendWA()">Send WhatsApp</button>
                 </form>
